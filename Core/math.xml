@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--$Id: mathSubject.xsd,v 1.6 2009/05/07 16:36:54 ginger Exp $-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.00">
+	<xs:annotation>
+		<xs:documentation>*********************************************</xs:documentation>
+		<xs:documentation>***** SCHEMA DEVELOPMENT  *****</xs:documentation>
+		<xs:documentation>*********************************************</xs:documentation>
+		<xs:documentation>Created: 2009-04-08</xs:documentation>
+		<xs:documentation>Author: Katy Ginger, University Corporation for Atmospheric Research (UCAR),  ginger@ucar.edu</xs:documentation>
+		<xs:documentation>Purpose: Controlled vocabulary for mathematical terms</xs:documentation>
+		<xs:documentation>Source: Middle School Portal (MSP) http://msteacher.org/resources/subject_list.aspx?sub=math and http://www.msteacher.org/resources/authority.aspx?type=taxonomy</xs:documentation>
+		<xs:documentation>Disclaimer from Source: The ENCdl Mathematics Subject List was created by the Eisenhower National Clearinghouse for Mathematics and Science Education. ENC is funded at least in part through Contract No. RJ97071001 with the U.S. Department of Education. The ideas and opinions expressed here do not necessarily reflect the positions or policies of the U.S. Department of Education.</xs:documentation>
+		<xs:documentation>Copyright from Source: Copyright: The Ohio State University holds copyright on all original materials we publish and routinely grants permission for materials to be reproduced or to be adapted and used by others for non-commercial purposes only. Requests for permission to do so may be submitted to Kimberly Lightle. Please use the following format to credit OSU: Reprinted/Modified from ENCdl mathematics subject list, version 1.0. Retrieved 4 15, 2009, from NSDL Middle School Portal: http://www.msteacher.org/resources/subject_list.aspx?sub=math. Copyright The Ohio State University.</xs:documentation>
+		<xs:documentation>Copyright for this file: See LICENSE AND COPYRIGHT at the end of this file.</xs:documentation>
+	</xs:annotation>
+
+	<xs:annotation>
+		<xs:documentation>**********************************************************</xs:documentation>
+		<xs:documentation>*****  HISTORY OF IMPORTANT CHANGES  *****</xs:documentation>
+		<xs:documentation>**********************************************************</xs:documentation>
+		<xs:documentation>None at the moment.</xs:documentation>
+	</xs:annotation>
+
+	<xs:annotation>
+		<xs:documentation>********************************</xs:documentation>
+		<xs:documentation>*****  ROOT ELEMENT *****</xs:documentation>
+		<xs:documentation>********************************</xs:documentation>
+		<xs:documentation>None</xs:documentation>
+	</xs:annotation>
+
+	<xs:annotation>
+		<xs:documentation>************************************************</xs:documentation>
+		<xs:documentation>*****  SIMPLE TYPES (alpha order)   *****</xs:documentation>
+		<xs:documentation>************************************************</xs:documentation>
+	</xs:annotation>
+	<xs:simpleType name="mathSubjectType">
+		<xs:annotation>
+			<xs:documentation>***** mathSubjectType  *****</xs:documentation>
+			<xs:documentation>Valid values for the element</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Algebra"/>
+			<xs:enumeration value="Algebra:Abstract algebra"/>
+			
+			<xs:enumeration value="Algebra:Algebraic manipulation"/>
+			<xs:enumeration value="Algebra:Algebraic manipulation:Exponents"/>
+			<xs:enumeration value="Algebra:Algebraic manipulation:Factoring"/>
+			<xs:enumeration value="Algebra:Algebraic manipulation:Fractions"/>
+			<xs:enumeration value="Algebra:Algebraic manipulation:Order of operations"/>
+			
+			<xs:enumeration value="Algebra:Algebraic proof"/>
+			
+			<xs:enumeration value="Algebra:Equations"/>
+			<xs:enumeration value="Algebra:Equations:Exponential"/>
+			<xs:enumeration value="Algebra:Equations:Linear"/>
+			<xs:enumeration value="Algebra:Equations:Logarithmic"/>
+			<xs:enumeration value="Algebra:Equations:Parametric"/>
+			<xs:enumeration value="Algebra:Equations:Polynomial"/>
+			<xs:enumeration value="Algebra:Equations:Quadratic"/>
+			<xs:enumeration value="Algebra:Equations:Rational"/>
+			<xs:enumeration value="Algebra:Equations:Systems of equations"/>
+			
+			<xs:enumeration value="Algebra:Functions"/>
+			<xs:enumeration value="Algebra:Functions:Exponential"/>
+			<xs:enumeration value="Algebra:Functions:Linear"/>
+			<xs:enumeration value="Algebra:Functions:Logarithmic"/>
+			<xs:enumeration value="Algebra:Functions:Piecewise"/>
+			<xs:enumeration value="Algebra:Functions:Polynomial"/>
+			<xs:enumeration value="Algebra:Functions:Quadratic"/>
+			<xs:enumeration value="Algebra:Functions:Rational"/>
+			<xs:enumeration value="Algebra:Functions:Step"/>
+			
+			<xs:enumeration value="Algebra:Graphing techniques"/>
+			<xs:enumeration value="Algebra:Inequalities"/>
+			
+			<xs:enumeration value="Algebra:Linear algebra"/>
+			<xs:enumeration value="Algebra:Linear algebra:Linear programming"/>
+			<xs:enumeration value="Algebra:Linear algebra:Linear transformations"/>
+			<xs:enumeration value="Algebra:Linear algebra:Matrices"/>
+			<xs:enumeration value="Algebra:Linear algebra:Systems of linear equations"/>
+			<xs:enumeration value="Algebra:Linear algebra:Vectors"/>
+			
+			<xs:enumeration value="Algebra:Sequences and series"/>
+
+			<xs:enumeration value="Calculus"/>
+			<xs:enumeration value="Calculus:Continuity"/>
+			<xs:enumeration value="Calculus:Differentiation"/>
+			<xs:enumeration value="Calculus:Functions"/>
+			<xs:enumeration value="Calculus:Integration"/>
+			<xs:enumeration value="Calculus:Limits"/>
+			<xs:enumeration value="Calculus:Multivariate"/>
+			<xs:enumeration value="Calculus:Series"/>
+
+			<xs:enumeration value="Discrete mathematics"/>
+			<xs:enumeration value="Discrete mathematics:Algorithms"/>
+			<xs:enumeration value="Discrete mathematics:Chaos"/>
+			<xs:enumeration value="Discrete mathematics:Combinations and permutations"/>
+			<xs:enumeration value="Discrete mathematics:Game theory"/>
+			<xs:enumeration value="Discrete mathematics:Graph theory"/>
+			<xs:enumeration value="Discrete mathematics:Recursion and iteration"/>
+
+			<xs:enumeration value="Geometry"/>
+			
+			<xs:enumeration value="Geometry:Analytic geometry"/>
+			<xs:enumeration value="Geometry:Analytic geometry:Cartesian coordinates"/>
+			<xs:enumeration value="Geometry:Analytic geometry:Circles"/>
+			<xs:enumeration value="Geometry:Analytic geometry:Conics"/>
+			<xs:enumeration value="Geometry:Analytic geometry:Distance formula"/>
+			<xs:enumeration value="Geometry:Analytic geometry:Lines"/>
+			<xs:enumeration value="Geometry:Analytic geometry:Planes"/>
+			<xs:enumeration value="Geometry:Analytic geometry:Polar coordinates"/>
+			<xs:enumeration value="Geometry:Analytic geometry:Surfaces"/>
+
+			<xs:enumeration value="Geometry:Fractal geometry"/>
+			<xs:enumeration value="Geometry:Geometric proof"/>
+
+			<xs:enumeration value="Geometry:Plane geometry"/>
+			<xs:enumeration value="Geometry:Plane geometry:Angles"/>
+			<xs:enumeration value="Geometry:Plane geometry:Circles"/>
+			<xs:enumeration value="Geometry:Plane geometry:Congruence"/>
+			<xs:enumeration value="Geometry:Plane geometry:Construction"/>
+			<xs:enumeration value="Geometry:Plane geometry:Lines and planes"/>
+			<xs:enumeration value="Geometry:Plane geometry:Polygons"/>
+			<xs:enumeration value="Geometry:Plane geometry:Pythagorean theorem"/>
+			<xs:enumeration value="Geometry:Plane geometry:Quadrilaterals"/>
+			<xs:enumeration value="Geometry:Plane geometry:Scale"/>
+			<xs:enumeration value="Geometry:Plane geometry:Similarity"/>
+			<xs:enumeration value="Geometry:Plane geometry:Symmetry"/>
+			<xs:enumeration value="Geometry:Plane geometry:Tilings and tessellations"/>
+			<xs:enumeration value="Geometry:Plane geometry:Transformations"/>
+			<xs:enumeration value="Geometry:Plane geometry:Triangles"/>
+
+			<xs:enumeration value="Geometry:Solid geometry"/>
+			<xs:enumeration value="Geometry:Solid geometry:Cones"/>
+			<xs:enumeration value="Geometry:Solid geometry:Cylinders"/>
+			<xs:enumeration value="Geometry:Solid geometry:Polyhedra"/>
+			<xs:enumeration value="Geometry:Solid geometry:Prisms"/>
+			<xs:enumeration value="Geometry:Solid geometry:Pyramids"/>
+			<xs:enumeration value="Geometry:Solid geometry:Spheres"/>
+
+			<xs:enumeration value="Logic and foundations"/>
+			<xs:enumeration value="Logic and foundations:Methods of proof"/>
+			<xs:enumeration value="Logic and foundations:Propositional and predicate logic"/>
+			<xs:enumeration value="Logic and foundations:Sets and set operations"/>
+			<xs:enumeration value="Logic and foundations:Venn diagrams"/>
+
+			<xs:enumeration value="Mathematics history"/>
+			<xs:enumeration value="Mathematics history:Biographies of mathematicians"/>
+			<xs:enumeration value="Mathematics history:Early number systems"/>
+			<xs:enumeration value="Mathematics history:Famous problems"/>
+
+			<xs:enumeration value="Measurement"/>
+			<xs:enumeration value="Measurement:Angle measure"/>
+			
+			<xs:enumeration value="Measurement:Area"/>
+			<xs:enumeration value="Measurement:Area:Area of circles"/>
+			<xs:enumeration value="Measurement:Area:Area of polygons"/>
+			<xs:enumeration value="Measurement:Area:Nonstandard shapes"/>
+			<xs:enumeration value="Measurement:Area:Surface area"/>
+			
+			<xs:enumeration value="Measurement:Circumference"/>
+			<xs:enumeration value="Measurement:Length"/>
+			<xs:enumeration value="Measurement:Money"/>
+			<xs:enumeration value="Measurement:Perimeter"/>
+			<xs:enumeration value="Measurement:Rate"/>
+			<xs:enumeration value="Measurement:Scale"/>
+			
+			<xs:enumeration value="Measurement:Systems of measurement"/>
+			<xs:enumeration value="Measurement:Systems of measurement:English"/>
+			<xs:enumeration value="Measurement:Systems of measurement:Metric"/>
+			<xs:enumeration value="Measurement:Systems of measurement:Nonstandard"/>
+			
+			<xs:enumeration value="Measurement:Temperature"/>
+			<xs:enumeration value="Measurement:Time"/>
+			<xs:enumeration value="Measurement:Volume"/>
+			<xs:enumeration value="Measurement:Weight and mass"/>
+
+			<xs:enumeration value="Number and operations"/>
+			<xs:enumeration value="Number and operations:Arithmetic"/>
+			<xs:enumeration value="Number and operations:Arithmetic:Comparison of numbers"/>
+			<xs:enumeration value="Number and operations:Arithmetic:Composition and decomposition of numbers"/>
+			<xs:enumeration value="Number and operations:Arithmetic:Counting"/>
+			<xs:enumeration value="Number and operations:Arithmetic:Decimals"/>
+			
+			<xs:enumeration value="Number and operations:Arithmetic:Decimals:Addition"/>
+			<xs:enumeration value="Number and operations:Arithmetic:Decimals:Division"/>
+			<xs:enumeration value="Number and operations:Arithmetic:Decimals:Multiplication"/>
+			<xs:enumeration value="Number and operations:Arithmetic:Decimals:Subtraction"/>
+			
+			<xs:enumeration value="Number and operations:Arithmetic:Exponents"/>
+			<xs:enumeration value="Number and operations:Arithmetic:Factorials"/>
+			<xs:enumeration value="Number and operations:Arithmetic:Factors"/>
+			
+			<xs:enumeration value="Number and operations:Arithmetic:Fractions"/>
+			<xs:enumeration value="Number and operations:Arithmetic:Fractions:Addition"/>
+			<xs:enumeration value="Number and operations:Arithmetic:Fractions:Division"/>
+			<xs:enumeration value="Number and operations:Arithmetic:Fractions:Equivalent fractions"/>
+			<xs:enumeration value="Number and operations:Arithmetic:Fractions:Multiplication"/>
+			<xs:enumeration value="Number and operations:Arithmetic:Fractions:Subtraction"/>
+			
+			<xs:enumeration value="Number and operations:Arithmetic:Number sense"/>
+			
+			<xs:enumeration value="Number and operations:Arithmetic:Operations"/>
+			<xs:enumeration value="Number and operations:Arithmetic:Operations:Addition"/>
+			<xs:enumeration value="Number and operations:Arithmetic:Operations:Division"/>
+			<xs:enumeration value="Number and operations:Arithmetic:Operations:Multiplication"/>
+			<xs:enumeration value="Number and operations:Arithmetic:Operations:Properties of operations"/>
+			<xs:enumeration value="Number and operations:Arithmetic:Operations:Subtraction"/>
+			
+			<xs:enumeration value="Number and operations:Arithmetic:Percent"/>
+			<xs:enumeration value="Number and operations:Arithmetic:Place value"/>
+			<xs:enumeration value="Number and operations:Arithmetic:Ratio and proportion"/>
+			<xs:enumeration value="Number and operations:Arithmetic:Roots"/>
+
+			<xs:enumeration value="Number and operations:Number concepts"/>
+			<xs:enumeration value="Number and operations:Number concepts:Complex numbers"/>
+			
+			<xs:enumeration value="Number and operations:Number concepts:Famous numbers"/>
+			<xs:enumeration value="Number and operations:Number concepts:Famous numbers:e"/>
+			<xs:enumeration value="Number and operations:Number concepts:Famous numbers:Golden ratio"/>
+			<xs:enumeration value="Number and operations:Number concepts:Famous numbers:i"/>
+			<xs:enumeration value="Number and operations:Number concepts:Famous numbers:Pi"/>
+			<xs:enumeration value="Number and operations:Number concepts:Famous numbers:Zero"/>
+			
+			<xs:enumeration value="Number and operations:Number concepts:Integers"/>
+			<xs:enumeration value="Number and operations:Number concepts:Irrational numbers"/>
+			<xs:enumeration value="Number and operations:Number concepts:Prime numbers"/>
+			<xs:enumeration value="Number and operations:Number concepts:Rational numbers"/>
+			<xs:enumeration value="Number and operations:Number concepts:Real numbers"/>
+			<xs:enumeration value="Number and operations:Number concepts:Whole numbers"/>
+			
+			<xs:enumeration value="Number and operations:Patterns and sequences"/>
+			<xs:enumeration value="Number and operations:Patterns and sequences:Arithmetic sequence"/>
+			<xs:enumeration value="Number and operations:Patterns and sequences:Fibonacci sequence"/>
+			<xs:enumeration value="Number and operations:Patterns and sequences:Geometric patterns"/>
+			<xs:enumeration value="Number and operations:Patterns and sequences:Geometric sequence"/>
+			<xs:enumeration value="Number and operations:Patterns and sequences:Number patterns"/>
+
+			<xs:enumeration value="Number theory"/>
+			<xs:enumeration value="Number theory:Cryptography"/>
+			<xs:enumeration value="Number theory:Modular arithmetic"/>
+			<xs:enumeration value="Number theory:Primes"/>
+
+
+			<xs:enumeration value="Probability"/>
+			<xs:enumeration value="Probability:Combinations and permutations"/>
+			<xs:enumeration value="Probability:Conditional probability"/>
+			
+			<xs:enumeration value="Probability:Distributions"/>
+			<xs:enumeration value="Probability:Distributions:Binomial distribution"/>
+			<xs:enumeration value="Probability:Distributions:Continuous distributions"/>
+			<xs:enumeration value="Probability:Distributions:Discrete distributions"/>
+			<xs:enumeration value="Probability:Distributions:Expected value"/>
+			<xs:enumeration value="Probability:Distributions:Normal distribution"/>
+			<xs:enumeration value="Probability:Distributions:Variance"/>
+			
+			<xs:enumeration value="Probability:Experimental and theoretical probability"/>
+			<xs:enumeration value="Probability:Independent events"/>
+			
+			<xs:enumeration value="Probability:Limit theorems"/>
+			<xs:enumeration value="Probability:Limit theorems:Central limit theorem"/>
+			<xs:enumeration value="Probability:Limit theorems:Law of large numbers"/>
+			
+			<xs:enumeration value="Probability:Random variables"/>
+			<xs:enumeration value="Probability:Sample space and events"/>
+
+			<xs:enumeration value="Process skills"/>
+			<xs:enumeration value="Process skills:Algorithms"/>
+
+			<xs:enumeration value="Process skills:Communication"/>
+			<xs:enumeration value="Process skills:Communication:Mathematical language"/>
+			<xs:enumeration value="Process skills:Communication:Reading in mathematics"/>
+			<xs:enumeration value="Process skills:Communication:Writing in mathematics"/>
+
+			<xs:enumeration value="Process skills:Concept formation"/>
+			<xs:enumeration value="Process skills:Connections"/>
+			<xs:enumeration value="Process skills:Estimation"/>
+			<xs:enumeration value="Process skills:Mental calculation"/>
+
+			<xs:enumeration value="Process skills:Problem solving"/>
+			<xs:enumeration value="Process skills:Problem solving:Strategies"/>
+			<xs:enumeration value="Process skills:Problem solving:Word problems"/>
+
+			<xs:enumeration value="Process skills:Reasoning"/>
+			<xs:enumeration value="Process skills:Reasoning:Critical thinking"/>
+			<xs:enumeration value="Process skills:Reasoning:Deductive reasoning"/>
+			<xs:enumeration value="Process skills:Reasoning:Inductive reasoning"/>
+
+			<xs:enumeration value="Process skills:Representation"/>
+			<xs:enumeration value="Process skills:Representation:Algebraic representation"/>
+			<xs:enumeration value="Process skills:Representation:Modeling"/>
+			<xs:enumeration value="Process skills:Representation:Visual representation"/>
+
+			<xs:enumeration value="Process skills:Spatial sense"/>
+			<xs:enumeration value="Process skills:Visualization"/>
+
+			<xs:enumeration value="Real world applications"/>
+			<xs:enumeration value="Real world applications:Cartography and surveying"/>
+			<xs:enumeration value="Real world applications:Consumer mathematics"/>
+			<xs:enumeration value="Real world applications:Engineering mathematics"/>
+			<xs:enumeration value="Real world applications:Mathematics for biology"/>
+			<xs:enumeration value="Real world applications:Mathematics for computer science"/>
+			<xs:enumeration value="Real world applications:Mathematics for social science"/>
+			<xs:enumeration value="Real world applications:Mathematics for the physical science"/>
+
+			<xs:enumeration value="Statistics"/>
+			
+			<xs:enumeration value="Statistics:Data analysis"/>
+			<xs:enumeration value="Statistics:Data analysis:Bayesian statistics"/>
+			<xs:enumeration value="Statistics:Data analysis:Confidence intervals"/>
+			<xs:enumeration value="Statistics:Data analysis:Data distribution"/>
+			<xs:enumeration value="Statistics:Data analysis:Error analysis"/>
+			<xs:enumeration value="Statistics:Data analysis:Hypothesis tests"/>
+			<xs:enumeration value="Statistics:Data analysis:Mean, median, and mode"/>
+			<xs:enumeration value="Statistics:Data analysis:Regression and correlation"/>
+			<xs:enumeration value="Statistics:Data analysis:Standard deviation"/>
+			
+			<xs:enumeration value="Statistics:Data collection"/>
+			<xs:enumeration value="Statistics:Data collection:Data and measurement issues"/>
+			<xs:enumeration value="Statistics:Data collection:Experimental design"/>
+			<xs:enumeration value="Statistics:Data collection:Sampling and surveys"/>
+			
+			<xs:enumeration value="Statistics:Data presentation"/>
+			<xs:enumeration value="Statistics:Data presentation:Bar graph"/>
+			<xs:enumeration value="Statistics:Data presentation:Box and whisker plot"/>
+			<xs:enumeration value="Statistics:Data presentation:Frequency graph"/>
+			<xs:enumeration value="Statistics:Data presentation:Histogram"/>
+			<xs:enumeration value="Statistics:Data presentation:Scatter plot"/>
+			<xs:enumeration value="Statistics:Data presentation:Stem and leaf plot"/>
+			<xs:enumeration value="Statistics:Data presentation:Table"/>
+			
+			<xs:enumeration value="Topology"/>
+
+			<xs:enumeration value="Trigonometry"/>
+			<xs:enumeration value="Trigonometry:Angles"/>
+			<xs:enumeration value="Trigonometry:Inverse trigonometric functions"/>
+			<xs:enumeration value="Trigonometry:Trigonometric equations"/>
+			<xs:enumeration value="Trigonometry:Trigonometric functions"/>
+			<xs:enumeration value="Trigonometry:Trigonometric identities"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>
+<!--LICENSE AND COPYRIGHT
+The contents of this file are subject to the Educational Community License v1.0 (the "License"); you may not use this file except in compliance with the License. You should obtain a copy of the License from http://www.opensource.org/licenses/ecl1.php. Files distributed under the License are distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License. Copyright 2002-2009 by Digital Learning Sciences, University Corporation for Atmospheric Research (UCAR). All rights reserved.-->
